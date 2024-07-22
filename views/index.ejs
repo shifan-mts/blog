@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+<body><div>
+    <h1>MTS Blogs</h1>
+    <h3>Essays</h3>
+</div>
+
+<div>
+    <% if (locals.name || locals.link) { %>
+     <a href="<%= link %>"><%= name %></a>
+    <% } %>
+</div>
+    <h3>wanna add some blog</h3>
+    <form action="/submit" method="POST">
+      <h4>Para:</h4>  <input type="text" name="para" id="" placeholder="enter your article">
+
+      <h4>Name</h4> 
+      <input type="text" name="name" id="" placeholder="enter the name:">
+      <input type="submit" value="OK">
+    </form>
+</body>
+</html>
