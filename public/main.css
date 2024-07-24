@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+    display: flexbox;
+    justify-content: center;
+}
+
+h1,h2,h3,h4,p{
+    color: white;
+    
+}
+a{
+    color: rgb(217, 245, 0);
+}
+.nn{
+    position: relative;
+    top: 35%;
+    left: 35%;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 60%;
+    background-color: blueviolet;
+    display: flex;
+    
+    flex-direction: column;
+    
+    
+}
+.btn{
+    background-color: chocolate;
+}

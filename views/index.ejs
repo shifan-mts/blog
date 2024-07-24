@@ -4,24 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <link rel="stylesheet" href="/public/main.css">
 </head>
 <body><div>
-    <h1>MTS Blogs</h1>
-    <h3>Essays</h3>
-</div>
-
-<div>
-    <% if (locals.name || locals.link) { %>
-     <a href="<%= link %>"><%= name %></a>
-    <% } %>
-</div>
-    <h3>wanna add some blog</h3>
+    
+    <div >
+        <div class="nn">
+        <h1 class="title">MTS Blogs</h1>
+        
+    <h3 >Essays</h3>
+    
+        <%  %>
+        <% if (locals.blog1) { %>
+            <% for (let i = 0; i < blog1.length; i++) { %>
+                
+                <a href="<%= blog1[i][1] %>"><%= blog1[i][0] %></a>
+                <br>
+            
+              <% } %>
+         
+        <% } %>
+    
+    <h3>Wanna add some blog?!</h3>
     <form action="/submit" method="POST">
-      <h4>Para:</h4>  <input type="text" name="para" id="" placeholder="enter your article">
-
-      <h4>Name</h4> 
+        <h4>Name</h4> 
       <input type="text" name="name" id="" placeholder="enter the name:">
-      <input type="submit" value="OK">
-    </form>
-</body>
+      <h4>Para:</h4>  <textarea name="para" id="" rows="5" cols="20"></textarea>
+
+      
+      <input type="submit" value="OK" class="btn">
+      <br>
+    </form> </div>
+</div>
+
+
+    
+    
 </html>
